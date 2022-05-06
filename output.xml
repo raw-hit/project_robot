@@ -1,80 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.5 on win32)" generated="20220505 16:55:18.737" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo3 Suite" source="C:\Users\Rohit\PycharmProjects\pythonProject $\selenium\demo3_suite.robot">
-<test id="s1-t1" name="TC1" line="6">
+<robot generator="Robot 5.0 (Python 3.9.5 on win32)" generated="20220506 11:53:44.633" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo4 Suite" source="C:\Users\Rohit\PycharmProjects\pythonProject $\selenium\demo4_suite.robot">
+<test id="s1-t1" name="TC1" line="7">
 <kw name="Append To Environment Variable" library="OperatingSystem">
-<arg>path</arg>
+<arg>Path</arg>
 <arg>C:\\DRIVERS</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220505 16:55:19.033" level="INFO">Environment variable 'path' set to value 'C:\Users\Rohit\PycharmProjects\pythonProject $\venv\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C;C:\Program Files\dotnet\;C:\Users\Rohit\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Rohit\AppData\Local\Programs\Python\Python39\;C:\Users\Rohit\AppData\Local\Microsoft\WindowsApps;C:\Users\Rohit\.dotnet\tools;C:\Users\Rohit\AppData\Local\GitHubDesktop\bin;C:\DRIVERS'.</msg>
-<status status="PASS" starttime="20220505 16:55:19.032" endtime="20220505 16:55:19.033"/>
+<msg timestamp="20220506 11:53:45.307" level="INFO">Environment variable 'Path' set to value 'C:\Users\Rohit\PycharmProjects\pythonProject $\venv\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C;C:\Program Files\dotnet\;C:\Users\Rohit\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Rohit\AppData\Local\Programs\Python\Python39\;C:\Users\Rohit\AppData\Local\Microsoft\WindowsApps;C:\Users\Rohit\.dotnet\tools;C:\Users\Rohit\AppData\Local\GitHubDesktop\bin;C:\DRIVERS'.</msg>
+<status status="PASS" starttime="20220506 11:53:45.306" endtime="20220506 11:53:45.307"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url=https://www.goto.com/meeting</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220505 16:55:19.034" level="INFO">Opening browser 'chrome' to base url 'https://www.goto.com/meeting'.</msg>
-<status status="PASS" starttime="20220505 16:55:19.033" endtime="20220505 16:55:38.993"/>
+<msg timestamp="20220506 11:53:45.307" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220506 11:53:45.307" endtime="20220506 11:53:48.410"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220505 16:55:38.994" endtime="20220505 16:55:39.174"/>
+<status status="PASS" starttime="20220506 11:53:48.411" endtime="20220506 11:53:48.539"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220505 16:55:39.175" endtime="20220505 16:55:39.184"/>
+<status status="PASS" starttime="20220506 11:53:48.540" endtime="20220506 11:53:48.542"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=https://www.medibuddy.in/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220506 11:53:48.543" level="INFO">Opening url 'https://www.medibuddy.in/'</msg>
+<status status="PASS" starttime="20220506 11:53:48.543" endtime="20220506 11:53:52.605"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>link=Create New Account</arg>
+<arg>id=wzrk-cancel</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220505 16:55:39.187" level="INFO">Clicking element 'link=Create New Account'.</msg>
-<msg timestamp="20220505 16:56:09.397" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220505 16:56:09.398" level="FAIL">Element with locator 'link=Create New Account' not found.</msg>
-<status status="FAIL" starttime="20220505 16:55:39.185" endtime="20220505 16:56:09.469"/>
+<msg timestamp="20220506 11:53:52.606" level="INFO">Clicking element 'id=wzrk-cancel'.</msg>
+<status status="PASS" starttime="20220506 11:53:52.606" endtime="20220506 11:54:16.373"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=For Employer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220506 11:54:16.374" level="INFO">Clicking element 'link=For Employer'.</msg>
+<status status="PASS" starttime="20220506 11:54:16.373" endtime="20220506 11:54:16.517"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MediBuddy LaunchPad</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220506 11:54:16.518" endtime="20220506 11:54:26.313"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>name=firstname</arg>
+<arg>id=getInTouchName</arg>
 <arg>rohit</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220505 16:56:09.470" endtime="20220505 16:56:09.470"/>
+<msg timestamp="20220506 11:54:26.314" level="INFO">Typing text 'rohit' into text field 'id=getInTouchName'.</msg>
+<status status="PASS" starttime="20220506 11:54:26.314" endtime="20220506 11:54:26.450"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=lastname</arg>
-<arg>sharma</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220505 16:56:09.470" endtime="20220505 16:56:09.470"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=password_step_input</arg>
-<arg>Sharma123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220505 16:56:09.471" endtime="20220505 16:56:09.471"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=reg_email__</arg>
-<arg>rohit@3987</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220505 16:56:09.471" endtime="20220505 16:56:09.471"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=reg_email_conformation__</arg>
-<arg>rohit@3987</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220505 16:56:09.472" endtime="20220505 16:56:09.472"/>
-</kw>
-<status status="FAIL" starttime="20220505 16:55:19.031" endtime="20220505 16:56:09.473">Element with locator 'link=Create New Account' not found.</status>
+<status status="PASS" starttime="20220506 11:53:45.305" endtime="20220506 11:54:26.451"/>
 </test>
-<status status="FAIL" starttime="20220505 16:55:18.740" endtime="20220505 16:56:09.474"/>
+<test id="s1-t2" name="Go To" line="27">
+<kw name="url=https://www.medibuddy.in">
+<msg timestamp="20220506 11:54:26.460" level="FAIL">No keyword with name 'url=https://www.medibuddy.in' found.</msg>
+<status status="FAIL" starttime="20220506 11:54:26.460" endtime="20220506 11:54:26.460"/>
+</kw>
+<status status="FAIL" starttime="20220506 11:54:26.453" endtime="20220506 11:54:26.461">No keyword with name 'url=https://www.medibuddy.in' found.</status>
+</test>
+<test id="s1-t3" name="Input" line="30">
+<status status="FAIL" starttime="20220506 11:54:26.463" endtime="20220506 11:54:26.464">Test contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20220506 11:53:44.635" endtime="20220506 11:54:26.466"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Demo3 Suite">Demo3 Suite</stat>
+<stat pass="1" fail="2" skip="0" id="s1" name="Demo4 Suite">Demo4 Suite</stat>
 </suite>
 </statistics>
 <errors>
